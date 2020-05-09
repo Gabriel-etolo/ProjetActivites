@@ -2,7 +2,7 @@
 Les noms des éléves qui participent
 Florent Biard (HE201813)
 Sebastian Dziemianko (HE201808)
-Julien Rahier
+Julien Rahier (HE201801)
 Gabriel Etolo (HE201834)
                                                         Description du projet
                                             
