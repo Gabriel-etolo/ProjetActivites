@@ -11,7 +11,7 @@ function initPage() {
 }
 
 function remplireTable(reponseRequete, idBodyTable){
-	let donnees= "";
+	let donnees;
 	for(let e of reponseRequete){
 	donnees += '<tr>'+ '<td onclick="getVille(\''+e.code+'\');">'+ e.nom+ '</td>'+'</tr>'+'\n';
 	}
@@ -20,7 +20,23 @@ function remplireTable(reponseRequete, idBodyTable){
 	}
 	
 	
-	
+//////////////////////////// Auteur Florent Biard HE201813/////////////////////////////
+
+
+function getVille(initPage) {
+	var xhr = new XMLHttpRequest();
+	xhr.open('get', 'getVilles?code=1000', true);
+	xhr.onload = function(){
+		var ligne = JSON.parse(this.responseText); var lng;
+		for( var i in ligne){
+			lng +='<li>' + ligne[i].Nom + '</li>';
+		}
+		document.getElementById('activite').innerHTML = lng;
+	}
+
+	xhr.send();
+}
+		
 
 
 
