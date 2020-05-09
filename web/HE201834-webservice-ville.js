@@ -11,7 +11,7 @@ function initPage() {
 }
 
 function remplireTable(reponseRequete, idBodyTable){
-	let donnees;
+	let donnees = '';
 	for(let e of reponseRequete){
 	donnees += '<tr>'+ '<td onclick="getVille(\''+e.code+'\');">'+ e.nom+ '</td>'+'</tr>'+'\n';
 	}
@@ -24,12 +24,12 @@ function remplireTable(reponseRequete, idBodyTable){
 
 
 function getVille(code) {
-	var xhr = new XMLHttpRequest();
+	let xhr = new XMLHttpRequest();
 	xhr.open('get', 'getVilles?code=' + code, true);
 	xhr.onload = function(){
-		var ligne = JSON.parse(this.responseText); var lng;
+		var ligne = JSON.parse(this.responseText); var lng = '';
 		for( var i in ligne){
-			lng +='<li>' + ligne[i].Nom + '</li>';
+			lng +='<tr>' + '<td onclick="getContact(\'' + ligne[i].Nom + '\');">' + ligne[i].Nom + '</td>' + '</tr>' + '\n';
 		}
 		document.getElementById('activite').innerHTML = lng;
 	}
@@ -39,21 +39,25 @@ function getVille(code) {
 		
 		
 		
-////////////////// auteur Dziemianko sebastian HE201808 ///////////////////////
+////////////////// auteur Dziemianko Sebastian HE201808 ///////////////////////
 
 
-function GetContact(Nom)
-	var xhr = new XMLHttpRequest()
-	xhr.open('get', 'getContact?acti=' + Nom, true);
+function getContact(Nom) {
+	let xhr = new XMLHttpRequest();
+	xhr.open('get', 'Contact?acti=' + Nom, true);
 	xhr.onload = function() {
-		var contactActi = JSON.parse(this.responseText); var num;
-		for( var a in contactActi){
-			num +='<li>' + contactActi[a].activiteTelephone + '</li>' + '<li>' + contactActi[a].activiteEmail + '</li>';
-		}
-		document.getElementById().innerHTML = num;
+	document.getElementById('contact').innerHTML = xhr.responseText + '\n';
+			
 	}
+	
 	xhr.send();
+
 }
+
+
+
+
+
 
 
 
