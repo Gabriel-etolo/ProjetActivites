@@ -23,9 +23,9 @@ function remplireTable(reponseRequete, idBodyTable){
 //////////////////////////// Auteur Florent Biard HE201813/////////////////////////////
 
 
-function getVille(initPage) {
+function getVille(code) {
 	var xhr = new XMLHttpRequest();
-	xhr.open('get', 'getVilles?code=1000', true);
+	xhr.open('get', 'getVilles?code=' + code, true);
 	xhr.onload = function(){
 		var ligne = JSON.parse(this.responseText); var lng;
 		for( var i in ligne){
@@ -37,6 +37,24 @@ function getVille(initPage) {
 	xhr.send();
 }
 		
+		
+		
+////////////////// auteur Dziemianko sebastian HE201808 ///////////////////////
+
+
+function GetContact(Nom)
+	var xhr = new XMLHttpRequest()
+	xhr.open('get', 'getContact?acti=' + Nom, true);
+	xhr.onload = function() {
+		var contactActi = JSON.parse(this.responseText); var num;
+		for( var a in contactActi){
+			num +='<li>' + contactActi[a].activiteTelephone + '</li>' + '<li>' + contactActi[a].activiteEmail + '</li>';
+		}
+		document.getElementById().innerHTML = num;
+	}
+	xhr.send();
+}
+
 
 
 
