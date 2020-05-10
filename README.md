@@ -1,4 +1,13 @@
 # ProjetEphec
+Liste des tâches : 
+- [x] Créer un service sur Sybase
+- [x] Créer la DB sur Sybase
+
+- [] Créer un ws d'affichage des villes
+- [] Créer un ws d'affichage activités
+- [] Créer un ws d'affichage du contact pour l'activité
+- [] Créer un ws de review des activités (Julien)
+
 
 
 ## Présentation de l'équipe
