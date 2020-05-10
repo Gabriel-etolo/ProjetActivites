@@ -30,7 +30,7 @@ Participants :
 ## Détail DB
 // Présenter les tables et les champs des tables SQL
 
-![Screenshot](db.png)
+![dbStructure](db.png)
 
 
 
