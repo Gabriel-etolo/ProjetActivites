@@ -2,11 +2,10 @@
 Liste des tâches : 
 - [x] Créer un service sur Sybase
 - [x] Créer la DB sur Sybase
-
-- [ ] Créer un ws d'affichage des villes
-- [ ] Créer un ws d'affichage activités
-- [ ] Créer un ws d'affichage du contact pour l'activité
-- [ ] Créer un ws de review des activités (Julien)
+- [x] Créer un ws d'affichage des villes (Florent)
+- [x] Créer un ws d'affichage activités (Etolo)
+- [x] Créer un ws d'affichage du contact pour l'activité (Dziemianko)
+- [x] Créer un ws de review des activités (Julien)
 
 
 
