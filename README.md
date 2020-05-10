@@ -3,10 +3,10 @@ Liste des tâches :
 - [x] Créer un service sur Sybase
 - [x] Créer la DB sur Sybase
 
-- [] Créer un ws d'affichage des villes
-- [] Créer un ws d'affichage activités
-- [] Créer un ws d'affichage du contact pour l'activité
-- [] Créer un ws de review des activités (Julien)
+- [ ] Créer un ws d'affichage des villes
+- [ ] Créer un ws d'affichage activités
+- [ ] Créer un ws d'affichage du contact pour l'activité
+- [ ] Créer un ws de review des activités (Julien)
 
 
 
@@ -30,3 +30,8 @@ Participants :
                                             
 ## Détail DB
 // Présenter les tables et les champs des tables SQL
+
+![Screenshot](db.png)
+
+
+
