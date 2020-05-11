@@ -20,19 +20,21 @@ function remplireTable(reponseRequete, idBodyTable){
 	}
 //////////////////////////// Auteur Florent Biard HE201813/////////////////////////////
 
-
 function getVille(code) {
-	let xhr = new XMLHttpRequest();
-	xhr.open('get', 'getVilles?code=' + code, true);
-	xhr.onload = function(){
-		var ligne = JSON.parse(this.responseText); var lng = '';
-		for( var i in ligne){
-			lng +='<tr>' + '<td onclick="getContact(\'' + ligne[i].Nom + '\');">' + ligne[i].Nom + '</td>' + '<td onclick="getContact(\'' + ligne[i].Nom + '\');">' + ligne[i].Type + '</td>' + '</tr>' + '\n';
-		}
-		document.getElementById('activite').innerHTML = lng;
-	}
+  let xhr = new XMLHttpRequest();
+  xhr.open('get', 'getVilles?code=' + code, true);
+  xhr.onload = function() {
+    var ligne = JSON.parse(this.responseText);
+    var lng = '';
+    for (var i in ligne) {
+      lng += '<tr>' + '<td onclick="getContact(\'' + ligne[i].Nom + '\');">' + ligne[i].Nom + ' </td>' +
+        '<td>' + '<button onclick="toggleForm(\'' + ligne[i].Nom + '\')">Ajouter un avis</button> ' + ' </td>' +
+        '</tr>' + '\n';
+    }
+    document.getElementById('activite').innerHTML = lng;
+  }
 
-	xhr.send();
+  xhr.send();
 }
 	
 	////////////////// auteur Dziemianko Sebastian HE201808 ///////////////////////
@@ -50,7 +52,29 @@ function getContact(Nom) {
 
 }
 
+////////////////// auteur Julien Rahier HE201901 ///////////////////////
 
+function getReviews(Nom) {
+  let xhr = new XMLHttpRequest();
+  xhr.open('get', 'review?acti=' + Nom, true);
+  xhr.onload = function() {
+    document.getElementById('reviews').innerHTML = xhr.responseText + '\n';
+  }
+
+  xhr.send();
+
+}
+
+
+function toggleForm() {
+  var formulaire = document.getElementById('formulaire');
+
+  if (formulaire.style.display == 'block') {
+    formulaire.style.display = 'none';
+  } else {
+    formulaire.style.display = 'block';
+  }
+}
 
 	
 	
