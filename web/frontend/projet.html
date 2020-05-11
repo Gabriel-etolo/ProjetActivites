@@ -1,0 +1,51 @@
+ <!DOCTYPE html>
+ <html>
+
+ <head>
+   <meta charset=utf-8>
+   <title>M2PRO6</title>
+   <link rel=stylesheet href=css/projet.css>
+
+
+
+ </head>
+
+ <body onLoad='initPage()'>
+   <header>
+     <h1>Projet Activitès</h1>
+   </header>
+
+
+   <section>
+     <table>
+      <caption><h2>Notre liste de Villes</h2></caption>
+       <tbody id=ville></tbody>
+     </table>
+   </section>
+   <table>
+     <caption><h2>Liste d'activites</h2></caption>
+     <tbody id=activite></tbody>
+   </table>
+   <table>
+    <caption><h2>Voici les contact</h2></caption>
+     <tbody id=contact></tbody>
+   </table>
+   <table>
+    <caption><h2>Liste des avis</h2></caption>
+     <tbody id=reviews></tbody>
+   </table>
+
+
+
+   <form id="formulaire" method="post" onsubmit="submitForm();return false">
+      <label>Titre :</label>
+      <input type="text" id="title" name="title" required/>
+      <label>Contenu :</label>
+      <input type="text" id="content" name="content" required/>
+      <input type="submit"/>
+   </form>
+
+  <script src=js/HE201834-webservice-ville.js></script>
+ </body>
+
+ </html>
