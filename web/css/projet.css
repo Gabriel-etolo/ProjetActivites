@@ -26,7 +26,7 @@ table {
 }
 
 td:hover, tr:hover {
-  color: orange;
+  color: blue;
 }
 
 h2, h3, h4, h5 {
