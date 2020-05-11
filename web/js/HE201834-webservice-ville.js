@@ -27,7 +27,7 @@ function getVille(code) {
 	xhr.onload = function(){
 		var ligne = JSON.parse(this.responseText); var lng = '';
 		for( var i in ligne){
-			lng +='<tr>' + '<td onclick="getContact(\'' + ligne[i].Nom + '\');">' + ligne[i].Nom + '</td>' + '</tr>' + '\n';
+			lng +='<tr>' + '<td onclick="getContact(\'' + ligne[i].Nom + '\');">' + ligne[i].Nom + '</td>' + '<td onclick="getContact(\'' + ligne[i].Nom + '\');">' + ligne[i].Type + '</td>' + '</tr>' + '\n';
 		}
 		document.getElementById('activite').innerHTML = lng;
 	}
