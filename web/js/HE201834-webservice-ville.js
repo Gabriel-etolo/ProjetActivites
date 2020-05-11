@@ -43,6 +43,7 @@ function getVille(code) {
 
 
 function getContact(Nom) {
+	getReviews(Nom);
 	let xhr = new XMLHttpRequest();
 	xhr.open('get', 'Contact?acti=' + Nom, true);
 	xhr.onload = function() {
