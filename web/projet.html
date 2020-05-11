@@ -1,28 +1,52 @@
  <!DOCTYPE html>
-<html>
+ <html>
+
  <head>
- <meta charset=utf-8>
- <title>M2PRO6</title>
- <link rel=stylesheet href=css/projet.css> 
- <script src=js/HE201834-webservice-ville.js ></script>
- <a href="formulaire.html">Le formumaire</a>
+   <meta charset=utf-8>
+   <title>M2PRO6</title>
+   <link rel=stylesheet href=css/projet.css>
 
- </head> 
- 
- <body onLoad='initPage();'>
- <p class="Bienvenue"><h1>Bienvenue dans le notre projet d'activitès</h1></p>
 
- <table>
- <caption><h2>Notre liste de Villes</h2></caption>
- <tbody id=ville></tbody> 
- </table>
-<table>
-<caption><h2>Liste d'activites</h2></caption>
-<tbody id=activite></tbody>
-</table>
-<table>
-<caption><h2>Voici les contact</h2></caption>
-<tbody id=contact></tbody>
-</table>
+
+ </head>
+
+ <body onLoad='initPage()'>
+   <header>
+     <h1>M2PR06</h1>
+   </header>
+
+
+   <section>
+     <table>
+       <caption>Notre liste de Villes</caption>
+       <tbody id=ville></tbody>
+     </table>
+     <p>cliquez sur le nom de la ville</p>
+   </section>
+   <table>
+     <caption>Liste d'activites</caption>
+     <tbody id=activite></tbody>
+   </table>
+   <table>
+     <caption>Voici les contact</caption>
+     <tbody id=contact></tbody>
+   </table>
+   <table>
+     <caption>Liste des avis</caption>
+     <tbody id=reviews></tbody>
+   </table>
+
+
+
+   <form id="formulaire" method="post" onsubmit="submitForm();return false">
+      <label>Titre :</label>
+      <input type="text" id="title" name="title" required/>
+      <label>Contenu :</label>
+      <input type="text" id="content" name="content" required/>
+      <input type="submit"/>
+   </form>
+
+  <script src=js/HE201834-webservice-ville.js></script>
  </body>
-</html> 
+
+ </html>
