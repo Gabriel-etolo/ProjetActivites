@@ -1,0 +1,22 @@
+insert into tbActivites (Nom, Type, VilleCode)
+VALUES 
+('zoo Anvers', 'Parc Animalier', 2000),
+('Musée Ann De Stroom', 'Culturelle', 2000),
+('Patinoire', 'Sportif', 3000),
+('Escape Room', 'Sportif', 3000),
+('Plopsa', 'Attraction', 3500),
+('Escape Room', 'Sportif', 3500),
+('Waliby', 'Attraction', 1300),
+('Golf', 'Sportif', 1300),
+('Karting', 'Ludique', 5000),
+('Citadelle', 'Culturelle', 5000),
+('Karting', 'Ludique', 4000),
+('Aquarium', 'Parc Animalier', 4000),
+('Circuit VTT', 'Sportif', 6600),
+('Piscine', 'Sportifs', 6600),
+('VTT', 'Sportifs', 8000),
+('Atelier chocolat', 'Gastronomique', 8000),
+('Paintball', 'Sportif', 9000),
+('Cathedrale', 'Culturelle', 9000),
+('Atomium', 'Culturelle', 1000),
+('Mini Europe', 'Culturelle', 1000);
