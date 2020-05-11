@@ -27,8 +27,10 @@ function getVille(code) {
     var ligne = JSON.parse(this.responseText);
     var lng = '';
     for (var i in ligne) {
-      lng += '<tr>' + '<td onclick="getContact(\'' + ligne[i].Nom + '\');">' + ligne[i].Nom + ' </td>' +
+      lng +='<tr>' + '<td onclick="getContact(\'' + ligne[i].Nom + '\');">' + ligne[i].Nom + '</td>'
+      + '<td onclick="getContact(\'' + ligne[i].Nom + '\');">' + ligne[i].Type + '</td>' +
         '<td>' + '<button onclick="toggleForm(\'' + ligne[i].Nom + '\')">Ajouter un avis</button> ' + ' </td>' +
+
         '</tr>' + '\n';
     }
     document.getElementById('activite').innerHTML = lng;
