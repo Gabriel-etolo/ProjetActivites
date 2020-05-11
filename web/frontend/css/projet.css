@@ -1,34 +1,43 @@
-body{
-	background-image: url("https://jereussis.be/jereussis/wp-content/uploads/2016/09/UneBelgique.jpg");
-	background-repeat:no-repeat;
-	background-position: left;
-
-font-family: Bookman, URW Bookman L, serif;
-font-weight: 100;
- width: 1500px;
-  height:800px;
- border: double black;
- min-height: 300px;}
-table, td{border: solid 5px black;
-	 border: double black;
-	border-collapse: collapse;
-	text-align: center;
-	color: purple;
-	font-weight: bolder;
-}
- table{width: 95%;
- margin: 5px;}
-td:hover,tr:hover{
- color:blue;
-}
-h2,h3,h4,h5{
-text-align: center;
-font-weight: bold;
+body {
+  background-image: url("https://jereussis.be/jereussis/wp-content/uploads/2016/09/UneBelgique.jpg");
+  background-repeat: no-repeat;
+  background-position: left;
+  font-family: Bookman, URW Bookman L, serif;
+  font-weight: 100;
+  width: auto;
+  height: 800px;
+  border: double black;
+  min-height: 300px;
 }
 
+table, td {
+  border: solid 5px black;
+  border: double black;
+  border-collapse: collapse;
+  text-align: center;
+  color: purple;
+  font-weight: bolder;
+}
+
+table {
+  width: 95%;
+  margin: 5px;
+}
+
+td:hover, tr:hover {
+  color: blue;
+}
+
+h2, h3, h4, h5 {
+  text-align: center;
+  font-weight: bold;
+}
 
 
-h1{
-	text-align: center;
-	background-color: red;
+button {
+  margin-left: 30px;
+}
+
+#formulaire {
+  align: auto;
 }
