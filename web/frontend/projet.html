@@ -12,32 +12,34 @@
 
  <body onLoad='initPage()'>
    <header>
-     <h1>Projet Activitès</h1>
+     <h1>M2PR06</h1>
    </header>
 
 
    <section>
      <table>
-      <caption><h2>Notre liste de Villes</h2></caption>
+       <caption>Notre liste de Villes</caption>
        <tbody id=ville></tbody>
      </table>
+     <p>cliquez sur le nom de la ville</p>
    </section>
    <table>
-     <caption><h2>Liste d'activites</h2></caption>
+     <caption>Liste d'activites</caption>
      <tbody id=activite></tbody>
    </table>
    <table>
-    <caption><h2>Voici les contact</h2></caption>
+     <caption>Voici les contact</caption>
      <tbody id=contact></tbody>
    </table>
    <table>
-    <caption><h2>Liste des avis</h2></caption>
-     <tbody id=reviews></tbody>
+     <caption>Liste des avis</caption>
+     <tbody id=reviews>
+     </tbody>
    </table>
 
 
 
-   <form id="formulaire" method="post" onsubmit="submitForm();return false">
+   <form id="formReview" action="">
       <label>Titre :</label>
       <input type="text" id="title" name="title" required/>
       <label>Contenu :</label>
@@ -46,6 +48,7 @@
    </form>
 
   <script src=js/HE201834-webservice-ville.js></script>
+  <script src=js/HE201901_webservice_form.js></script>
  </body>
 
  </html>
