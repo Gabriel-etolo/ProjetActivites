@@ -12,6 +12,7 @@ function addReview(event) {
     event.preventDefault();
     let formulaire = this;
     ajout(formulaire.title.value,formulaire.content.value);
+    formulaire.reset();
 }
 
 function ajout(title, content){
