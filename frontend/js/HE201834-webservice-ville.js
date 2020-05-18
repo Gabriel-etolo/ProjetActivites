@@ -93,19 +93,12 @@ function getReviews(Nom) {
 function toggleForm(Nom) {
   activityChoosen = Nom;
 
+
+  document.getElementById('nomActivityChoosen').innerHTML = "Ajouter un avis pour : " + activityChoosen;
+
   if (formReview.style.display == 'block') {
     formReview.style.display = 'none';
   } else {
     formReview.style.display = 'block';
   }
 }
-
-
-
-
-
-/*
-
-<link href="https://fonts.googleapis.com/css?family=McLaren|Montserrat&display=swap" rel="stylesheet" />
-
-*/
