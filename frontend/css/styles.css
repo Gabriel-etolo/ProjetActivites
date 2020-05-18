@@ -56,3 +56,6 @@ button {
 .list-group {
   padding: 1vh 2vw;
 }
+caption {
+  caption-side: top !important;
+}
