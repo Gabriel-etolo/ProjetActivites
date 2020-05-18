@@ -26,7 +26,7 @@ Notre projet consiste en un site qui répertorie des activités en fonction de l
 Projet.html : Base du site.
 
 - CSS :
-Projet.css : Feuille de style du site.
+styles.css : Feuille de style du site.
 
 - JS :
 Projet.js : Code JS gérant l’affichage des données sur le site.
@@ -103,7 +103,7 @@ Le tableau tbActivites est composé de quatre colonnes de données, nom qui est 
 - tbContact :
 Le tableau tbContact est composé de quatre colonnes, la première étant idContact qui est la clé primaire et qui contient l’id des contacts à afficher, la deuxième est activiteTelephone qui contient un numéro de contact vers l’activité si celui-ci est disponible, la troisième est activiteEmail qui contient un mail de contact vers l’activité si celui-ci est disponible, la dernière colonne contient les noms de activités. Ce tableau contient une clé étrangère vers le tableau tbActivites par nom.
 
-t- bReviews :
+- tbReviews :
 Le tableau tbReviews est composé de trois colonnes, la première colonne est actiReviewTitle qui contient un avis bref sur l’activité, la deuxième colonne est actiReviewContent qui contient un développement de cet avis, la troisième colonne est nomActivité qui contient le nom de l’activité celui-ci est la clé primaire du tableau. Ce tableau contient une clé étrangère vers le tableau tbActivites par nomActivite.
 
 
