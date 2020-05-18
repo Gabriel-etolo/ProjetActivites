@@ -4,10 +4,9 @@
  <head>
    <meta charset=utf-8>
    <title>M2PRO6</title>
-   <link rel=stylesheet href=css/projet.css>
-
-
-
+   <link rel=stylesheet href=css/styles.css>
+   <link href="https://fonts.googleapis.com/css?family=McLaren|Montserrat&display=swap" rel="stylesheet" />
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
  </head>
 
  <body onLoad='initPage()'>
@@ -16,13 +15,11 @@
    </header>
 
 
-   <section>
-     <table>
-       <caption>Notre liste de Villes</caption>
-       <tbody id=ville></tbody>
-     </table>
-     <p>cliquez sur le nom de la ville</p>
-   </section>
+
+   <table>
+     <caption>Notre liste de Villes</caption>
+     <tbody id=ville></tbody>
+   </table>
    <table>
      <caption>Liste d'activites</caption>
      <tbody id=activite></tbody>
@@ -40,15 +37,15 @@
 
 
    <form id="formReview" action="">
-      <label>Titre :</label>
-      <input type="text" id="title" name="title" required/>
-      <label>Contenu :</label>
-      <input type="text" id="content" name="content" required/>
-      <input type="submit"/>
+     <label>Titre :</label>
+     <input type="text" id="title" name="title" required />
+     <label>Contenu :</label>
+     <input type="text" id="content" name="content" required />
+     <input type="submit" />
    </form>
 
-  <script src=js/HE201834-webservice-ville.js></script>
-  <script src=js/HE201901_webservice_form.js></script>
+   <script src=js/HE201834-webservice-ville.js></script>
+   <script src=js/HE201901_webservice_form.js></script>
  </body>
 
  </html>

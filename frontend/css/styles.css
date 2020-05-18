@@ -1,49 +1,58 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-html {
-  font-family: "Montserrat", sans-serif;
-}
 body {
-  background: #eee;
-  padding: 0 16px;
+
+  background-repeat: no-repeat;
+  background-position: left;
+  font-family: Bookman, URW Bookman L, serif;
+  font-weight: 100;
+  width: auto;
+  height: 800px;
+  min-height: 300px;
 }
 
-header {
-  background-color: #f5ba13;
-  margin: auto -16px;
-  padding: 16px 32px;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+#heading {
+  background-color: #A683E3;
+  text-align: center;
 }
 
-header h1 {
-  color: #fff;
-  font-family: "McLaren", cursive;
-  font-weight: 200;
+table, td {
+  border: solid 5px black;
+  border: double black;
+  border-collapse: collapse;
+  text-align: center;
+  color: purple;
+  font-weight: bolder;
 }
 
-.choix {
-  background: #fff;
-  border-radius: 7px;
-  box-shadow: 0 2px 5px #ccc;
-  padding: 10px;
-  width: 240px;
-  margin: 16px;
-  float: left;
-}
-.choix h1 {
-  font-size: 1.1em;
-  margin-bottom: 6px;
-}
-.choix p {
-  font-size: 1.1em;
-  margin-bottom: 1px;
-  white-space: pre-wrap;
-  word-wrap: break-word;
+table {
+  width: 95%;
+  margin: 5px;
 }
 
-.activity {
-  margin: 10px;
+td:hover, tr:hover {
+  color: orange;
+}
+
+h2, h3, h4, h5 {
+  text-align: center;
+  font-weight: bold;
+}
+
+
+button {
+  margin-left: 30px;
+}
+
+#formulaire {
+  align: auto;
+}
+
+.flex-container {
+  display: flex;
+  background-color: white;
+  justify-content: flex-start;
+  padding: 1vh 2vw;
+}
+
+.list-group {
+  padding: 1vh 2vw;
 }
