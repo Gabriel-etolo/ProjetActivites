@@ -107,7 +107,7 @@ tbReviews :
 Le tableau tbReviews est composé de trois colonnes, la première colonne est actiReviewTitle qui contient un avis bref sur l’activité, la deuxième colonne est actiReviewContent qui contient un développement de cet avis, la troisième colonne est nomActivité qui contient le nom de l’activité celui-ci est la clé primaire du tableau. Ce tableau contient une clé étrangère vers le tableau tbActivites par nomActivite.
 
 
-![dbStructure](dbStructure.png)
+![dbStructuredb](dbStructuredb.png)
 
 
 
