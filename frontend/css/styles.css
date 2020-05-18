@@ -9,8 +9,8 @@ body {
   min-height: 300px;
 }
 
-#heading {
-  background-color: #A683E3;
+header {
+  background-color: grey;
   text-align: center;
 }
 
