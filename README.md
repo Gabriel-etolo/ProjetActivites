@@ -26,7 +26,7 @@ Notre projet consiste en un site qui répertorie des activités en fonction de l
 Projet.html : Base du site.
 
 - CSS :
-Projet.css : Feuille de style du site.
+Styles.css : Feuille de style du site.
 
 - JS :
 Projet.js : Code JS gérant l’affichage des données sur le site.
