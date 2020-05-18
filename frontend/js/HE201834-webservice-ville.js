@@ -29,7 +29,7 @@ reponseRequete reponse en json du web service code
 idBodyTable l'id dans lequel les données seront intégrées
 */
 function remplireTable(reponseRequete, idBodyTable) {
-  let donnees = ''; // variable vide qui contiendra les données sql
+  let donnees = '<button type="button" class="list-group-item list-group-item-action active disabled">Villes</button>'; // variable vide qui contiendra les données sql
   for (let e of reponseRequete) { // charge les donnees de la table sql une par un en y integrant une fonction onclick faisant appel à la fonction getVille
     donnees += '<button type="button" class="list-group-item list-group-item-action" onclick="getVille(\'' + e.code + '\');">'+ e.nom  +'</button>' + '\n'
   }
@@ -47,7 +47,7 @@ function getVille(code) { // création de ma fonction, variable de code au-dessu
   xhr.open('get', 'getVilles?code=' + code, true); // ouvre la requetes vers le serveur, url, ouvre un asynchro
   xhr.onload = function() {  // création d'une fonction lorsque la requetes est effectuer
     var ligne = JSON.parse(this.responseText); //crée une chaine
-    var lng = ''; //création d'une variable
+    var lng = '<button type="button" class="list-group-item list-group-item-action active disabled">Activités</button>'; //création d'une variable
     for (var i in ligne) { // création d'une boucle qui va créer une chaine de caractère avec les données d'SQL dans une liste de boutons avec la variable vide.(on placera un onclick pour la fonction getReviews
 
       lng += '<button class="list-group-item list-group-item-action flex-column align-items-start" onclick="getContact(\'' + ligne[i].Nom + '\'); toggleForm(\'' + ligne[i].Nom + '\');">' +

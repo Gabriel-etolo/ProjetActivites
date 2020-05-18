@@ -25,7 +25,7 @@ function ajout(title, content){
   console.log(xhr);
 	let newAdd = "<tr><td>" + title + "</td><td>" + content +"</td></tr>";
 
-  document.getElementById("reviews").innerHTML = newAdd;
+  document.getElementById("reviews").innerHTML = getReviews(activityChoosen);
 
 	xhr.send();
 
