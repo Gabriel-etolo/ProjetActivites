@@ -8,6 +8,15 @@ function initListener() { // Initialise le formulaire et ajoute un listener dess
   formReview.addEventListener("submit", addReview);
 }
 
+/**
+ * fonction addReview
+ *
+ * @param {object} event - An event param
+ *
+ * @example
+ *
+ *     foo('hello')
+ */
 function addReview(event) {
     event.preventDefault(); // Permet de ne pas recharger la page
     let formulaire = this;
@@ -15,6 +24,18 @@ function addReview(event) {
     formulaire.reset(); // Vide le formulaire des infos
 }
 
+
+/**
+ * fonction ajout
+ *
+ * @param {string} title - Titre de l'avis
+ * @param {string} content - Contenu de l'avis
+ * @return {void}
+ *
+ * @example
+ *
+ *     ajout('titre', 'contenu')
+ */
 function ajout(title, content){
 	let xhr = new XMLHttpRequest(); // Initialise une requête xhr
 

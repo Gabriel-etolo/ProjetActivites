@@ -34,7 +34,6 @@ function remplireTable(reponseRequete, idBodyTable) {
     donnees += '<button type="button" class="list-group-item list-group-item-action" onclick="getVille(\'' + e.code + '\');">'+ e.nom  +'</button>' + '\n'
   }
 
-  console.log(donnees);
   document.getElementById("ville").innerHTML = donnees; // charge la table dans le tboby d'id ville
 }
 
